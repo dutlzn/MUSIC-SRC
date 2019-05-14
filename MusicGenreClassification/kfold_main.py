@@ -16,6 +16,10 @@ from args import (
     build_loss_func_class, build_randomized_method, build_block_class)
 from utils import manual_seed, manual_worker_seed, run_epoch, run_epochs, multiclass_roc_auc_score, print
 
+'''
+类似这样输入命令
+python kfold_main.py --model DCIN --block_config 3 3 --drop_rate 0.2 --dataset GTZAN --train_model
+'''
 
 def get_dataloaders(args):
     Dataset = build_dataset_class(args)

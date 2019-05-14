@@ -4,8 +4,10 @@ from datetime import datetime
 
 import torch
 import torch.nn as nn
-
-
+'''
+类似这样输入命令
+python kfold_main.py --model DCIN --block_config 3 3 --drop_rate 0.2 --dataset GTZAN --train_model
+'''
 parser = argparse.ArgumentParser(
     description='Parameters for the training and the model.')
 
